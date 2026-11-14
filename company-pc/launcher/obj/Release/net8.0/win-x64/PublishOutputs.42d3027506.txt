@@ -1,0 +1,5 @@
+/workspace/company-pc/launcher/bin/publish-single/생산성보기.pdb
+/workspace/company-pc/launcher/bin/publish-single/Microsoft.Web.WebView2.Core.xml
+/workspace/company-pc/launcher/bin/publish-single/Microsoft.Web.WebView2.WinForms.xml
+/workspace/company-pc/launcher/bin/publish-single/Microsoft.Web.WebView2.Wpf.xml
+/workspace/company-pc/launcher/bin/publish-single/생산성보기.exe

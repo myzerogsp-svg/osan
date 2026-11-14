@@ -1,0 +1,5 @@
+/tmp/center-pub/생산성보기.pdb
+/tmp/center-pub/Microsoft.Web.WebView2.Core.xml
+/tmp/center-pub/Microsoft.Web.WebView2.WinForms.xml
+/tmp/center-pub/Microsoft.Web.WebView2.Wpf.xml
+/tmp/center-pub/생산성보기.exe

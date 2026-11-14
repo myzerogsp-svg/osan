@@ -1,0 +1,587 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Malgun Gothic", "맑은 고딕", "Noto Sans KR", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  --color-bg: #e7eef2;
+  --color-ink: #1c2833;
+  --color-muted: #5d6d7e;
+  --color-paper: #ffffff;
+  --color-title: #1a5276;
+  --color-header: #2c3e50;
+  --color-on-dark: #ffffff;
+  --color-yellow: #fff9c4;
+  --color-mark: #8e44ad;
+  --color-slate: #d5dbdb;
+  --color-ice: #eaf2f8;
+  --color-grid: #c5ced6;
+  --color-line-1: #e74c3c;
+  --color-line-2: #e67e22;
+  --color-line-3: #f1c40f;
+  --color-line-4: #27ae60;
+  --color-line-5: #3498db;
+  --color-line-6: #9b59b6;
+  --color-line-7: #e91e63;
+  --color-line-8: #1abc9c;
+  --radius: 0.375rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  select:not(:disabled),
+  label[for] {
+    cursor: pointer;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+}
+
+.ios-sheet{background:#f2f2f7;min-height:100%}.ios-sheet>h2.bg-title,.ios-sheet>.bg-title{color:#1c1c1e;letter-spacing:-.02em;background:0 0;padding:14px 16px 2px;font-size:20px;font-weight:650}.ios-sheet>.bg-title h2{color:#1c1c1e;background:0 0;padding-top:14px;padding-bottom:2px}.ios-sheet select,.ios-sheet>div:not(.bg-title) button.h-11,.ios-sheet>div:not(.bg-title) button.h-10{background:#fff;border:0;border-radius:999px;height:32px;font-size:13px;box-shadow:0 1px 2px #00000014}.ios-sheet>.bg-title button{color:#fff;white-space:nowrap;background:#007aff;border-radius:999px;height:32px;padding:0 12px;font-size:13px;font-weight:650}.ios-sheet>div button.h-11.bg-title,.ios-sheet>div button.bg-title,.ios-sheet>div button.h-11.bg-ink,.ios-sheet>div button.bg-ink{color:#fff;background:#007aff}.ios-sheet>.overflow-x-auto{background:#fff;border-radius:16px;margin:8px 12px 12px;overflow:auto;box-shadow:0 1px 3px #00000014}.ios-sheet>p{color:#6e6e73;padding-left:16px;padding-right:16px}.loc-bar{height:16px}.loc-board{scrollbar-width:none;overflow:auto}.loc-board::-webkit-scrollbar{display:none}.loc-y{width:16px;overflow-y:scroll}.loc-aisle{opacity:.9;background:repeating-linear-gradient(#d5dbdb 0 6px,#0000 6px 12px)}.loc-pillar{background:repeating-linear-gradient(-45deg,#2c3e50 0 5px,#41566c 5px 10px)}.summary-phone .pace-board{width:100%;max-width:100%}.col-mid th,.col-mid td{text-align:center}.col-mid thead th:has(button){padding:0}.col-mid thead button{text-align:center;width:100%;padding:8px;display:block}@media (width<=1023px){.phone-compact table{width:100%;font-size:11px;min-width:0!important}.summary-phone table{width:max-content;font-size:11px;min-width:0!important}.phone-compact th,.phone-compact td,.summary-phone th,.summary-phone td{padding:3px 4px!important}.stat-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.stat-tiles>div{padding:8px 10px}.stat-tiles .text-2xl{font-size:18px;line-height:1.25}.loc-bar{display:none}.loc-board>.flex{gap:10px;flex-direction:column!important;width:100%!important}.loc-board>.flex>section{width:100%!important}}.goods-print,.time-print{display:none}@page{size:A4 portrait;margin:12mm}@page time-sheet{size:A4 landscape;margin:8mm}@media print{body.print-goods{background:#fff!important}body.print-goods>:not(.goods-print){display:none!important}body.print-goods .goods-print{color:#1c2833;font-family:Malgun Gothic,맑은 고딕,sans-serif;display:block!important}.goods-print-head{border-bottom:3px solid #1a5276;margin-bottom:10px;padding-bottom:8px}.goods-print-head p{color:#5d6d7e;margin:0;font-size:11px}.goods-print-head h1{color:#1a5276;letter-spacing:-.03em;margin:2px 0 4px;font-size:22px}.goods-print-sums{grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px;display:grid}.goods-print-sums div{border:1px solid #c5ced6;border-top:4px solid #1a5276;padding:6px 8px}.goods-print-sums div:nth-child(3){border-top-color:#e74c3c}.goods-print-sums strong{font-size:18px;display:block}.goods-print-sums span{color:#5d6d7e;font-size:11px}.goods-print table{border-collapse:collapse;width:100%;font-size:11px}.goods-print thead{display:table-header-group}.goods-print th,.goods-print td{text-align:right;vertical-align:top;border:1px solid #c5ced6;padding:4px 6px}.goods-print th{color:#fff;text-align:center;background:#1a5276;font-weight:700}.goods-print td:first-child,.goods-print th:first-child{text-align:center;width:32px}.goods-print td:nth-child(2),.goods-print th:nth-child(2){text-align:center;width:34%}.goods-print td:nth-child(3),.goods-print th:nth-child(3){text-align:left}.goods-print .barcode svg{width:92%;height:38px}.goods-print td b,.goods-print td small{display:block}.goods-print td small{color:#5d6d7e;font-weight:500}.goods-print tbody tr:nth-child(2n) td{background:#f4f7f8}.goods-print tr{break-inside:avoid}.goods-print-note{color:#5d6d7e;margin:8px 0 0;font-size:10px}body.print-time{background:#fff!important}body.print-time>:not(.time-print){display:none!important}body.print-time .time-print{page:time-sheet;color:#1c2833;-webkit-print-color-adjust:exact;print-color-adjust:exact;font-family:Malgun Gothic,맑은 고딕,sans-serif;display:block!important}.time-print-head{border-bottom:3px solid #1a5276;margin-bottom:8px;padding-bottom:6px}.time-print-head p{color:#5d6d7e;margin:0;font-size:11px}.time-print-head h1{color:#1a5276;letter-spacing:-.03em;margin:2px 0 0;font-size:20px}.time-print-sums{gap:8px;margin-bottom:8px;display:flex}.time-print-sums div{border:1px solid #c5ced6;border-top:3px solid #1a5276;min-width:72px;padding:4px 8px}.time-print-sums strong{font-size:14px;display:block}.time-print-sums span{color:#5d6d7e;font-size:10px}.time-print table{border-collapse:collapse;width:100%;font-size:8px}.time-print thead{display:table-header-group}.time-print th,.time-print td{text-align:right;white-space:nowrap;border:1px solid #c5ced6;padding:2px 3px}.time-print th{color:#fff;text-align:center;background:#1a5276;font-weight:700}.time-print tr{break-inside:avoid}}
+
+
+.manual-sheet,
+.manual-sheet * {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.manual-print-root {
+  display: none;
+}
+
+@page manual-slide {
+  size: 1280px 720px;
+  margin: 0;
+}
+
+@media print {
+  body.manual-export {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  body.manual-export > *:not(.manual-print-root) {
+    display: none !important;
+  }
+
+  body.manual-export .manual-print-root {
+    display: block !important;
+  }
+
+  body.manual-export .manual-print-page {
+    page: manual-slide;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  body.manual-export .manual-print-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  body.manual-export .slide {
+    break-after: page;
+  }
+}
+
+.chrome-tabs {
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  height: 32px;
+  margin: 0 2px -6px;
+  background: transparent;
+}
+
+.chrome-tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin: 0 10px;
+  padding: 0 4px 0 14px;
+  color: #1c1c1e;
+  background: #e5e5ea;
+  border-radius: 10px 10px 0 0;
+}
+
+.chrome-tab.on {
+  z-index: 1;
+  background: #d1d1d6;
+}
+
+.chrome-tab::before,
+.chrome-tab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+
+.chrome-tab::before {
+  left: -10px;
+  background: radial-gradient(circle at 0 0, transparent 10px, #e5e5ea 10.5px);
+}
+
+.chrome-tab::after {
+  right: -10px;
+  background: radial-gradient(circle at 100% 0, transparent 10px, #e5e5ea 10.5px);
+}
+
+.chrome-tab.on::before {
+  background: radial-gradient(circle at 0 0, transparent 10px, #d1d1d6 10.5px);
+}
+
+.chrome-tab.on::after {
+  background: radial-gradient(circle at 100% 0, transparent 10px, #d1d1d6 10.5px);
+}
+
+.chrome-tab-label {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.chrome-tab-x {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #636366;
+  cursor: pointer;
+}
+
+.chrome-tab-x:hover {
+  background: rgba(60, 60, 67, 0.16);
+  color: #1c1c1e;
+}
+
+html.win-shell,
+html.win-shell body {
+  background: #f3f3f3;
+  color: #1a1a1a;
+  font-family: "Segoe UI", "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+html.win-shell main {
+  background: #f3f3f3;
+  padding-top: 0;
+}
+
+html.win-shell [class*="rounded-full"],
+html.win-shell [class*="rounded-2xl"],
+html.win-shell [class*="rounded-xl"],
+html.win-shell [class*="rounded-lg"],
+html.win-shell [class*="rounded-["] {
+  border-radius: 4px !important;
+}
+
+html.win-shell [class*="007aff"],
+html.win-shell [class*="005ecb"] {
+  background-color: #0067c0 !important;
+  color: #fff !important;
+}
+
+html.win-shell nav[aria-label="메뉴"] button[class*="007aff"] {
+  background: #e5f1fb !important;
+  color: #1a1a1a !important;
+  box-shadow: inset 3px 0 0 #0067c0;
+}
+
+html.chrome-shell,
+html.chrome-shell body {
+  background: #dee1e6;
+  color: #202124;
+  font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+html.chrome-shell main {
+  background: #dee1e6;
+}
+
+html.chrome-shell [class*="rounded-full"],
+html.chrome-shell [class*="rounded-2xl"],
+html.chrome-shell [class*="rounded-xl"],
+html.chrome-shell [class*="rounded-lg"] {
+  border-radius: 8px !important;
+}
+
+html.chrome-shell main > section {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+html.chrome-shell [class*="007aff"],
+html.chrome-shell [class*="005ecb"] {
+  background-color: #1a73e8 !important;
+  color: #fff !important;
+  border-radius: 16px !important;
+}
+
+html.chrome-shell nav[aria-label="메뉴"] {
+  background: #fff !important;
+  border-right: 1px solid #dadce0;
+}
+
+html.chrome-shell nav[aria-label="메뉴"] button[class*="007aff"],
+html.chrome-shell nav[aria-label="메뉴"] button[class*="e8f1ff"] {
+  background: #e8f0fe !important;
+  color: #1967d2 !important;
+  border-radius: 20px !important;
+}
+
+html.chrome-shell .ios-sheet {
+  background: #fff;
+}
+
+html.chrome-shell .ios-sheet > .overflow-x-auto {
+  border: 1px solid #dadce0;
+  border-radius: 8px !important;
+  box-shadow: none;
+}
+
+html.chrome-shell .ios-sheet > .bg-title button,
+html.chrome-shell .ios-sheet > div button.bg-title,
+html.chrome-shell .ios-sheet > div button.bg-ink {
+  background: #1a73e8 !important;
+  border-radius: 16px !important;
+}
+
+html.win-shell [class*="f2f2f7"] {
+  background-color: #f3f3f3 !important;
+}
+
+html.win-shell main > section {
+  border-radius: 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid #e1e1e1 !important;
+  background: #f3f3f3 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+html.win-shell nav[aria-label="메뉴"] {
+  background: #f9f9f9 !important;
+  border-right: 1px solid #e5e5e5;
+  padding: 8px 6px;
+}
+
+html.win-shell .ios-sheet {
+  background: #f3f3f3;
+}
+
+html.win-shell .ios-sheet > .overflow-x-auto {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px !important;
+  box-shadow: none;
+}
+
+html.win-shell .ios-sheet select,
+html.win-shell .ios-sheet > div:not(.bg-title) button.h-11,
+html.win-shell .ios-sheet > div:not(.bg-title) button.h-10,
+html.win-shell .ios-sheet > .bg-title button,
+html.win-shell .ios-sheet > div button.bg-title,
+html.win-shell .ios-sheet > div button.bg-ink {
+  border: 1px solid #d1d1d1;
+  border-radius: 4px !important;
+  box-shadow: none;
+}
+
+html.win-shell .ios-sheet > .bg-title button,
+html.win-shell .ios-sheet > div button.bg-title,
+html.win-shell .ios-sheet > div button.bg-ink {
+  border-color: #0067c0;
+  background: #0067c0 !important;
+}
+
+html.win-shell .chrome-tabs {
+  height: 28px;
+  margin-bottom: 0;
+}
+
+html.win-shell .chrome-tab {
+  height: 28px;
+  margin: 0 2px;
+  padding: 0 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+html.win-shell .chrome-tab::before,
+html.win-shell .chrome-tab::after {
+  display: none;
+}
+
+html.win-shell .chrome-tab.on {
+  background: #fff;
+  border-color: #e5e5e5;
+  box-shadow: inset 0 -2px 0 #0067c0;
+}
+
+html.win-shell .chrome-tab-x {
+  border-radius: 2px;
+}
+
+html.tone-field,
+html.tone-field body,
+html.tone-field main,
+html.tone-field.win-shell,
+html.tone-field.win-shell body,
+html.tone-field.win-shell main,
+html.tone-field.chrome-shell,
+html.tone-field.chrome-shell body,
+html.tone-field.chrome-shell main {
+  background: #ffe56a !important;
+}
+html.tone-field .ios-sheet,
+html.tone-field [class*="f2f2f7"] {
+  background-color: #fff6c2 !important;
+}
+html.tone-field [class*="007aff"],
+html.tone-field.win-shell [class*="007aff"],
+html.tone-field.chrome-shell [class*="007aff"],
+html.tone-field.naver-shell [class*="007aff"],
+html.tone-field .bg-title,
+html.tone-field .ios-sheet > .bg-title button,
+html.tone-field .ios-sheet > div button.bg-title,
+html.tone-field .ios-sheet > div button.bg-ink {
+  background-color: #fff !important;
+  color: #1a1a1a !important;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18);
+}
+html.tone-field nav[aria-label="메뉴"],
+html.tone-field.win-shell nav[aria-label="메뉴"],
+html.tone-field.chrome-shell nav[aria-label="메뉴"],
+html.tone-field.naver-shell nav[aria-label="메뉴"] {
+  background: #ffe56a !important;
+}
+html.tone-field nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-field.win-shell nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-field.chrome-shell nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-field.naver-shell nav[aria-label="메뉴"] button[class*="007aff"] {
+  background: #fff !important;
+  color: #1a1a1a !important;
+  box-shadow: inset 3px 0 0 #1a1a1a;
+}
+
+html.tone-puff,
+html.tone-puff body,
+html.tone-puff main,
+html.tone-puff.win-shell,
+html.tone-puff.win-shell body,
+html.tone-puff.win-shell main,
+html.tone-puff.chrome-shell,
+html.tone-puff.chrome-shell body,
+html.tone-puff.chrome-shell main {
+  background: #ffe8ee !important;
+}
+html.tone-puff .ios-sheet,
+html.tone-puff [class*="f2f2f7"] {
+  background-color: #fff6f8 !important;
+}
+html.tone-puff [class*="007aff"],
+html.tone-puff.win-shell [class*="007aff"],
+html.tone-puff.chrome-shell [class*="007aff"],
+html.tone-puff .bg-title {
+  background-color: #e9899c !important;
+  color: #fff !important;
+}
+html.tone-puff nav[aria-label="메뉴"],
+html.tone-puff.win-shell nav[aria-label="메뉴"],
+html.tone-puff.chrome-shell nav[aria-label="메뉴"] {
+  background: #fffaf8 !important;
+}
+html.tone-puff nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-puff.win-shell nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-puff.chrome-shell nav[aria-label="메뉴"] button[class*="007aff"] {
+  background: #f4b7c5 !important;
+  color: #5c4038 !important;
+  box-shadow: none;
+}
+
+html.tone-pop,
+html.tone-pop body,
+html.tone-pop main,
+html.tone-pop.win-shell,
+html.tone-pop.win-shell body,
+html.tone-pop.win-shell main,
+html.tone-pop.chrome-shell,
+html.tone-pop.chrome-shell body,
+html.tone-pop.chrome-shell main {
+  background: #fff1a8 !important;
+}
+html.tone-pop .ios-sheet,
+html.tone-pop [class*="f2f2f7"] {
+  background-color: #fff8dc !important;
+}
+html.tone-pop [class*="007aff"],
+html.tone-pop.win-shell [class*="007aff"],
+html.tone-pop.chrome-shell [class*="007aff"],
+html.tone-pop .bg-title {
+  background-color: #e23b2f !important;
+  color: #fff !important;
+}
+html.tone-pop nav[aria-label="메뉴"],
+html.tone-pop.win-shell nav[aria-label="메뉴"],
+html.tone-pop.chrome-shell nav[aria-label="메뉴"] {
+  background: #ffe14a !important;
+}
+html.tone-pop nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-pop.win-shell nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-pop.chrome-shell nav[aria-label="메뉴"] button[class*="007aff"] {
+  background: #e23b2f !important;
+  color: #fff !important;
+  box-shadow: inset 3px 0 0 #1a1a1a;
+}
+
+html.tone-sky,
+html.tone-sky body,
+html.tone-sky main,
+html.tone-sky.win-shell,
+html.tone-sky.win-shell body,
+html.tone-sky.win-shell main,
+html.tone-sky.chrome-shell,
+html.tone-sky.chrome-shell body,
+html.tone-sky.chrome-shell main {
+  background: #c8ebff !important;
+}
+html.tone-sky .ios-sheet,
+html.tone-sky [class*="f2f2f7"] {
+  background-color: #eef8ff !important;
+}
+html.tone-sky [class*="007aff"],
+html.tone-sky.win-shell [class*="007aff"],
+html.tone-sky.chrome-shell [class*="007aff"],
+html.tone-sky .bg-title {
+  background-color: #1780e6 !important;
+  color: #fff !important;
+}
+html.tone-sky nav[aria-label="메뉴"],
+html.tone-sky.win-shell nav[aria-label="메뉴"],
+html.tone-sky.chrome-shell nav[aria-label="메뉴"] {
+  background: #f7fcff !important;
+}
+html.tone-sky nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-sky.win-shell nav[aria-label="메뉴"] button[class*="007aff"],
+html.tone-sky.chrome-shell nav[aria-label="메뉴"] button[class*="007aff"] {
+  background: #1780e6 !important;
+  color: #fff !important;
+  box-shadow: inset 3px 0 0 #e10600;
+}
+
+html.naver-shell,
+html.naver-shell body,
+html.naver-shell main {
+  background: #fff;
+  color: #1e1e23;
+  font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+html.naver-shell [class*="rounded-full"],
+html.naver-shell [class*="rounded-2xl"],
+html.naver-shell [class*="rounded-xl"],
+html.naver-shell [class*="rounded-lg"] {
+  border-radius: 8px !important;
+}
+
+html.naver-shell main > section {
+  border: 0 !important;
+  border-bottom: 1px solid #ededed !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+
+html.naver-shell [class*="007aff"],
+html.naver-shell [class*="005ecb"],
+html.naver-shell .bg-title,
+html.naver-shell .ios-sheet > .bg-title button,
+html.naver-shell .ios-sheet > div button.bg-title,
+html.naver-shell .ios-sheet > div button.bg-ink {
+  background-color: #03c75a;
+  color: #fff;
+  border-radius: 8px !important;
+}
+
+html.naver-shell nav[aria-label="메뉴"] {
+  background: #fff !important;
+  border-right: 1px solid #ededed;
+}
+
+html.naver-shell nav[aria-label="메뉴"] button[class*="007aff"] {
+  background: #e9f9ef;
+  color: #019b45;
+  box-shadow: none;
+  border-radius: 8px !important;
+}
+
+html.naver-shell .ios-sheet {
+  background: #f7f7f8;
+}
+
+html.naver-shell .chrome-tab::before,
+html.naver-shell .chrome-tab::after {
+  display: none;
+}
+
+html.naver-shell .chrome-tab.on {
+  background: #fff;
+  box-shadow: inset 0 -2px 0 #03c75a;
+}
+
+html.tone-naver,
+html.tone-naver body,
+html.tone-naver main,
+html.tone-naver.win-shell,
+html.tone-naver.win-shell body,
+html.tone-naver.win-shell main,
+html.tone-naver.chrome-shell,
+html.tone-naver.chrome-shell body,
+html.tone-naver.chrome-shell main {
+  background: #fff !important;
+}
+html.tone-naver .ios-sheet,
+html.tone-naver [class*="f2f2f7"] {
+  background-color: #f7f7f8 !important;
+}
+html.tone-naver [class*="007aff"],
+html.tone-naver.win-shell [class*="007aff"],
+html.tone-naver.chrome-shell [class*="007aff"],
+html.tone-naver .bg-title {
+  background-color: #03c75a !important;
+  color: #fff !important;
+}
+html.tone-naver nav[aria-label="메뉴"] button[class*="007aff"] {
+  background: #e9f9ef !important;
+  color: #019b45 !important;
+  box-shadow: none;
+}
+
+
+
+

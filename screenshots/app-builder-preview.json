@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "센터 생산성",
+      "hasCanvas": false,
+      "bodyTextLen": 1069,
+      "bodyTextHash": "d8d8b2cc0603c25944bc6d5523d82a32a0d461d4f9e2a583d959b3a80330e1d1",
+      "bodyTextPrefix": "센터 생산성 엑셀 선택 배치표 파일 없음 생산성 EXE 라인별 생산성 1센터 전체 기본 — — 캡처 복사 총 작업시",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "센터 생산성",
+      "hasCanvas": false,
+      "bodyTextLen": 418,
+      "bodyTextHash": "432006cd928778019ac3e26d706ee2297bf28196d9ca2de868d24654bd2a6728",
+      "bodyTextPrefix": "센터 생산성 엑셀 선택 배치표 파일 없음 생산성 EXE 라인별 생산성 센터비교 예상 작업 종료시간 라인별 생산성 1",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

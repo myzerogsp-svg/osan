@@ -1,0 +1,2 @@
+/tmp/center-publish/생산성보기.pdb
+/tmp/center-publish/생산성보기.exe

@@ -1,0 +1,1 @@
+var e=`/assets/roster-template-Di1e0zgh.xlsx`;export{e as default};

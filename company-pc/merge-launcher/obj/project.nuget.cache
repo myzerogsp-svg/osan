@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "JFaGvZ7ycgA=",
+  "success": true,
+  "projectFilePath": "/workspace/company-pc/merge-launcher/MergeOpen.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/closedxml/0.104.2/closedxml.0.104.2.nupkg.sha512",
+    "/root/.nuget/packages/closedxml.parser/1.2.0/closedxml.parser.1.2.0.nupkg.sha512",
+    "/root/.nuget/packages/documentformat.openxml/3.1.1/documentformat.openxml.3.1.1.nupkg.sha512",
+    "/root/.nuget/packages/documentformat.openxml.framework/3.1.1/documentformat.openxml.framework.3.1.1.nupkg.sha512",
+    "/root/.nuget/packages/exceldatareader/3.7.0/exceldatareader.3.7.0.nupkg.sha512",
+    "/root/.nuget/packages/excelnumberformat/1.1.0/excelnumberformat.1.1.0.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.net.illink.tasks/8.0.32/microsoft.net.illink.tasks.8.0.32.nupkg.sha512",
+    "/root/.nuget/packages/rbush/4.0.0/rbush.4.0.0.nupkg.sha512",
+    "/root/.nuget/packages/sixlabors.fonts/1.0.0/sixlabors.fonts.1.0.0.nupkg.sha512",
+    "/root/.nuget/packages/system.io.packaging/8.0.1/system.io.packaging.8.0.1.nupkg.sha512",
+    "/root/.nuget/packages/system.text.encoding.codepages/8.0.0/system.text.encoding.codepages.8.0.0.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.app.runtime.win-x64/8.0.32/microsoft.netcore.app.runtime.win-x64.8.0.32.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/8.0.32/microsoft.aspnetcore.app.runtime.win-x64.8.0.32.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.app.host.win-x64/8.0.32/microsoft.netcore.app.host.win-x64.8.0.32.nupkg.sha512"
+  ],
+  "logs": []
+}

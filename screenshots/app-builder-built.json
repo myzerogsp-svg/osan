@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "센터 생산성",
+      "hasCanvas": false,
+      "bodyTextLen": 418,
+      "bodyTextHash": "432006cd928778019ac3e26d706ee2297bf28196d9ca2de868d24654bd2a6728",
+      "bodyTextPrefix": "센터 생산성 엑셀 선택 배치표 파일 없음 생산성 EXE 라인별 생산성 센터비교 예상 작업 종료시간 라인별 생산성 1",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "센터 생산성",
+      "hasCanvas": false,
+      "bodyTextLen": 418,
+      "bodyTextHash": "432006cd928778019ac3e26d706ee2297bf28196d9ca2de868d24654bd2a6728",
+      "bodyTextPrefix": "센터 생산성 엑셀 선택 배치표 파일 없음 생산성 EXE 라인별 생산성 센터비교 예상 작업 종료시간 라인별 생산성 1",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: body text collapsed (1069 -> 418 chars)"
+  ]
+}

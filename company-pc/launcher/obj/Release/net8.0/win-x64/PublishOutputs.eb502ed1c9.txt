@@ -1,0 +1,5 @@
+/tmp/osan-publish/생산성보기.pdb
+/tmp/osan-publish/Microsoft.Web.WebView2.Core.xml
+/tmp/osan-publish/Microsoft.Web.WebView2.WinForms.xml
+/tmp/osan-publish/Microsoft.Web.WebView2.Wpf.xml
+/tmp/osan-publish/생산성보기.exe

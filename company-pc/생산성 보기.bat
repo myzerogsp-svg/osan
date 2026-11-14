@@ -1,0 +1,3 @@
+@echo off
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0open.ps1" "%~1"
+if errorlevel 1 pause

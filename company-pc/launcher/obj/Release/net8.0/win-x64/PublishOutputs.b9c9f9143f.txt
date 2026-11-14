@@ -1,0 +1,5 @@
+/tmp/productivity-publish/생산성보기.pdb
+/tmp/productivity-publish/Microsoft.Web.WebView2.Core.xml
+/tmp/productivity-publish/Microsoft.Web.WebView2.WinForms.xml
+/tmp/productivity-publish/Microsoft.Web.WebView2.Wpf.xml
+/tmp/productivity-publish/생산성보기.exe

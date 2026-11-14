@@ -1,0 +1,2 @@
+/tmp/merge-publish/파일합치기.pdb
+/tmp/merge-publish/파일합치기.exe
